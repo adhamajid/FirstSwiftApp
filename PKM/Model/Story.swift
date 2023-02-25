@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct Story: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+//Model and Sample Data....
 
-struct Story_Previews: PreviewProvider {
-    static var previews: some View {
-        Story()
-    }
+var stories = [
+    Story(image: "Pic1", title: "Pimtanas"),
+    Story(image: "Pic2", title: "Pameran Milad FTI"),
+    Story(image: "Pic3", title: "Video Profil Lensa"),
+    Story(image: "Pic4", title: "Forbes Kemah"),
+]
+
+struct Story : Identifiable{
+    var id = UUID().uuidString
+    var image : String
+    var title : String
 }

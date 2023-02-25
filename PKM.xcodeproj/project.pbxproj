@@ -14,6 +14,9 @@
 		498D04F1277058B400D4056E /* PKMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D04F0277058B400D4056E /* PKMTests.swift */; };
 		498D04FB277058B400D4056E /* PKMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D04FA277058B400D4056E /* PKMUITests.swift */; };
 		498D04FD277058B400D4056E /* PKMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D04FC277058B400D4056E /* PKMUITestsLaunchTests.swift */; };
+		498D050C277059ED00D4056E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D050B277059ED00D4056E /* Home.swift */; };
+		498D050E277065F400D4056E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D050D277065F400D4056E /* Story.swift */; };
+		498D051027706D8400D4056E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D050F27706D8400D4056E /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		498D04DC277058B300D4056E /* PKM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		498D04DC277058B300D4056E /* AdhaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdhaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		498D04DF277058B300D4056E /* PKMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKMApp.swift; sourceTree = "<group>"; };
 		498D04E1277058B300D4056E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		498D04E3277058B400D4056E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +47,9 @@
 		498D04F6277058B400D4056E /* PKMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498D04FA277058B400D4056E /* PKMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKMUITests.swift; sourceTree = "<group>"; };
 		498D04FC277058B400D4056E /* PKMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		498D050B277059ED00D4056E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		498D050D277065F400D4056E /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		498D050F27706D8400D4056E /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +90,7 @@
 		498D04DD277058B300D4056E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				498D04DC277058B300D4056E /* PKM.app */,
+				498D04DC277058B300D4056E /* AdhaApp.app */,
 				498D04EC277058B400D4056E /* PKMTests.xctest */,
 				498D04F6277058B400D4056E /* PKMUITests.xctest */,
 			);
@@ -94,6 +100,8 @@
 		498D04DE277058B300D4056E /* PKM */ = {
 			isa = PBXGroup;
 			children = (
+				498D050A2770590F00D4056E /* Model */,
+				498D05092770590300D4056E /* View */,
 				498D04DF277058B300D4056E /* PKMApp.swift */,
 				498D04E1277058B300D4056E /* ContentView.swift */,
 				498D04E3277058B400D4056E /* Assets.xcassets */,
@@ -127,6 +135,23 @@
 			path = PKMUITests;
 			sourceTree = "<group>";
 		};
+		498D05092770590300D4056E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				498D050B277059ED00D4056E /* Home.swift */,
+				498D050F27706D8400D4056E /* BlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		498D050A2770590F00D4056E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				498D050D277065F400D4056E /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,7 +169,7 @@
 			);
 			name = PKM;
 			productName = PKM;
-			productReference = 498D04DC277058B300D4056E /* PKM.app */;
+			productReference = 498D04DC277058B300D4056E /* AdhaApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		498D04EB277058B400D4056E /* PKMTests */ = {
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				498D04E2277058B300D4056E /* ContentView.swift in Sources */,
+				498D050C277059ED00D4056E /* Home.swift in Sources */,
+				498D051027706D8400D4056E /* BlurView.swift in Sources */,
 				498D04E0277058B300D4056E /* PKMApp.swift in Sources */,
+				498D050E277065F400D4056E /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,24 +444,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PKM/Preview Content\"";
 				DEVELOPMENT_TEAM = TYPD79YR6C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PKM PM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = freelancer.PKM;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdhaApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,24 +479,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PKM/Preview Content\"";
 				DEVELOPMENT_TEAM = TYPD79YR6C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PKM PM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = freelancer.PKM;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AdhaApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
